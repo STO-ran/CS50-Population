@@ -20,7 +20,7 @@ int main(void)
     while (e < 9);
 
     // Calculate number of years until we reach threshold
-    int t = e / (n + (n / 3) - (n / 4));
+    int t = e % (n + (n / 3) - (n / 4));
 
     // TODO: Print number of years
     printf("The initial population size is: %i\n", n);
